@@ -14,3 +14,12 @@ date ,open ,close = np.loadtxt("000001.csv",delimiter=',',converters={0:mdates.b
 plt.plot_date(date,open,linestyle='--',color="green",marker="<")
 plt.plot_date(date,open,linestyle='-',color="red",marker ='o')
 plt.show()
+
+# 练习
+'''
+    画出x值为[0,10]的正弦函数图像
+'''
+x = np.linspace(0,10,100)
+y = np.sin(x)
+plt.plot(x,y)
+plt.show()
